@@ -4,6 +4,7 @@
 
 ## AndyHandy has :
 - **Toast**
+- **Snackbar**
 ---
 
 ### Toast
@@ -30,6 +31,65 @@
     longToastOther(context,R.string.app_name) //Int
     ```
   
+### Snackbar
+- Short Length Snackbar 
+    ```
+    snackbar(view,"Hi there!") // CharSequence
+    snackbar(view,R.string.app_name) //Int
+    
+    /* Snackbar with action */
+    // CharSequence
+    
+    snackbar(view,"Hi there!",
+          "Action Button Name",{
+              action_here
+          })
+   
+   //Int
+   snackbar(view,R.string.app_name,
+          "Action Button Name",{
+              action_here
+          })
+    ```
+- Long Length Snackbar 
+    ```
+    longSnackbar(view,"Hi there!") // CharSequence
+    longSnackbar(view,R.string.app_name) //Int
+    
+    /* Snackbar with action */
+    // CharSequence
+    
+    longSnackbar(view,"Hi there!",
+          "Action Button Name",{
+              action_here
+          })
+   
+   //Int
+   longSnackbar(view,R.string.app_name,
+          "Action Button Name",{
+              action_here
+          })
+    ```
+- Indefinite Length Snackbar 
+    ```
+    indefiniteSnackbar(view,"Hi there!") // CharSequence
+    indefiniteSnackbar(view,R.string.app_name) //Int
+    
+    /* Snackbar with action */
+    // CharSequence
+    
+    indefiniteSnackbar(view,"Hi there!",
+          "Action Button Name",{
+              action_here
+          })
+   
+   //Int
+   indefiniteSnackbar(view,R.string.app_name,
+          "Action Button Name",{
+              action_here
+          })
+    ```
+     
 ## Contributing
 
 The best way to submit a patch is to send us a [pull request](https://help.github.com/articles/about-pull-requests/). Before submitting the pull request, make sure all existing tests are passing, and add the new test if it is required.
