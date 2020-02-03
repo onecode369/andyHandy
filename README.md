@@ -1,6 +1,27 @@
 # AndyHandy
 
 [![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)
+[![Latest AndyHandy Release](https://jitpack.io/v/onecode369/andyHandy.svg)](https://jitpack.io/#onecode369/andyHandy)
+
+## How to add BasicAnkoLibrary to your app
+---
+### To get this library into your app:
+
+Step 1. Add the JitPack repository to your build file
+```
+allprojects {
+  repositories {
+    ...
+    maven { url 'https://jitpack.io' }
+  }
+}
+```
+Step 2. Add the dependency
+```
+dependencies {
+  implementation 'com.github.onecode369:andyHandy:$andyHandy_version'
+}
+```
 
 ## AndyHandy has :
 - **Toast**
