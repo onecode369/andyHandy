@@ -1,0 +1,2 @@
+include ':app', ':andy-handy-commons'
+rootProject.name='Andy Handy'
