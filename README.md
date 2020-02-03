@@ -244,8 +244,8 @@
       ```
       
   - Call Intent
-    - Inside Activity
     > Make Sure to take run-time permission 
+    - Inside Activity
       ```
       makeCall ( Phone Number )
       ```
