@@ -39,6 +39,17 @@
                 android:textColor="#FFF"
                 android:text="Show Snackbar"/>
 
+            <Button
+                android:id="@+id/dialog_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:padding="5dp"
+                android:background="@drawable/btn_background"
+                android:layout_margin="10dp"
+                android:textColor="#FFF"
+                android:text="Show Dialog"/>
+
         </LinearLayout>
 
         <TextView

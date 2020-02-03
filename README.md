@@ -5,6 +5,7 @@
 ## AndyHandy has :
 - **Toast**
 - **Snackbar**
+- **Alert Dialog Box**
 ---
 
 ### Toast
@@ -89,6 +90,75 @@
               action_here
           })
     ```
+     
+### Alert Dialog
+- Dialog Box with positive button only
+  - Inside Activity
+      ```
+      //CharSequence
+      dialogBox("title", "message",
+                cancelable(Boolean) ,positiveButtonText, {
+                    positiveButtonFun()
+                })
+      //Int
+      dialogBox(R.string.title, R.string.message,
+                  cancelable(Boolean) ,positiveButtonText, {
+                      positiveButtonFun()
+                  })
+      ```
+  - Outside Activity
+      ```
+      //CharSequence
+      dialogBoxOther( context , "title", "message",
+                cancelable(Boolean) ,positiveButtonText, {
+                    positiveButtonFun()
+                })
+      //Int
+      dialogBoxOther( context ,R.string.title, R.string.message,
+                  cancelable(Boolean) ,positiveButtonText, {
+                      positiveButtonFun()
+                  })
+      ```
+  
+- Dialog Box with positive button as well as negative 
+  - Inside Activity     
+      ```
+      //CharSequence
+      dialogBox("title", "message",
+                cancelable(Boolean) ,positiveButtonText, {
+                    positiveButtonFun()
+                },
+                negativeButtonText,{
+                    negativeButtonFun()
+                })
+      //Int
+      dialogBox(R.string.title, R.string.message,
+                cancelable(Boolean) ,positiveButtonText, {
+                    positiveButtonFun()
+                },
+                negativeButtonText,{
+                    negativeButtonFun()
+                })
+      ```
+  - Outside Activity     
+      ```
+      //CharSequence
+      dialogBoxOther( context , "title", "message",
+                cancelable(Boolean) ,positiveButtonText, {
+                    positiveButtonFun()
+                },
+                negativeButtonText,{
+                    negativeButtonFun()
+                })
+      //Int
+      dialogBoxOther( context , R.string.title, R.string.message,
+                cancelable(Boolean) ,positiveButtonText, {
+                    positiveButtonFun()
+                },
+                negativeButtonText,{
+                    negativeButtonFun()
+                })
+      ```      
      
 ## Contributing
 

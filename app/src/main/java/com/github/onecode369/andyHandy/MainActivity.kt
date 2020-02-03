@@ -2,6 +2,7 @@ package com.github.onecode369.andyHandy
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.github.onecode369.andy_handy_commons.dialog.dialogBox
 import com.github.onecode369.andy_handy_commons.dialog.snackbar
 import com.github.onecode369.andy_handy_commons.dialog.toast
 import kotlinx.android.synthetic.main.activity_main.*
@@ -17,6 +18,15 @@ class MainActivity : AppCompatActivity() {
         }
         snackbar_btn.setOnClickListener {
             snackbar(activity_main_root,"hi","Ok",{finish()})
+        }
+        dialog_btn.setOnClickListener {
+            dialogBox("title", "message",
+                true,"Yes", {
+                    finish()
+                },
+                "No",{
+                    finish()
+                })
         }
     }
 }
