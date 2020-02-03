@@ -50,6 +50,17 @@
                 android:textColor="#FFF"
                 android:text="Show Dialog"/>
 
+            <Button
+                android:id="@+id/notify_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:padding="5dp"
+                android:background="@drawable/btn_background"
+                android:layout_margin="10dp"
+                android:textColor="#FFF"
+                android:text="Show Notification"/>
+
         </LinearLayout>
 
         <TextView

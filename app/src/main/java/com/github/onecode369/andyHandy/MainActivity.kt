@@ -5,6 +5,7 @@ import android.os.Bundle
 import com.github.onecode369.andy_handy_commons.dialog.dialogBox
 import com.github.onecode369.andy_handy_commons.dialog.snackbar
 import com.github.onecode369.andy_handy_commons.dialog.toast
+import com.github.onecode369.andy_handy_commons.notifications.notification
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -27,6 +28,9 @@ class MainActivity : AppCompatActivity() {
                 "No",{
                     finish()
                 })
+        }
+        notify_btn.setOnClickListener {
+            notification(124,"Anko","Anko test","Blah blah blah","Anko Notification",R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground)
         }
     }
 }

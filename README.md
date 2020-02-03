@@ -6,6 +6,7 @@
 - **Toast**
 - **Snackbar**
 - **Alert Dialog Box**
+- **Notification**
 ---
 
 ### Toast
@@ -159,6 +160,18 @@
                     negativeButtonFun()
                 })
       ```      
+     
+### Notification
+- Inside Activity
+  ```
+  notification(uniqueId , channelId , contentTitle , contentText , 
+  description , smallIcon , largeIcon)
+  ```
+- Outside Activity
+  ```
+  notificationOther(context , uniqueId , channelId , contentTitle , 
+  contentText , description , smallIcon , largeIcon)
+  ```     
      
 ## Contributing
 
