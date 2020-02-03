@@ -61,6 +61,17 @@
                 android:textColor="#FFF"
                 android:text="Show Notification"/>
 
+            <Button
+                android:id="@+id/new_activity_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:padding="5dp"
+                android:background="@drawable/btn_background"
+                android:layout_margin="10dp"
+                android:textColor="#FFF"
+                android:text="New Activity"/>
+
         </LinearLayout>
 
         <TextView
