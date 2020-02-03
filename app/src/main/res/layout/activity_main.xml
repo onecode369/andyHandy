@@ -72,6 +72,62 @@
                 android:textColor="#FFF"
                 android:text="New Activity"/>
 
+            <Button
+                android:id="@+id/browse_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:padding="5dp"
+                android:background="@drawable/btn_background"
+                android:layout_margin="10dp"
+                android:textColor="#FFF"
+                android:text="Browse"/>
+
+            <Button
+                android:id="@+id/share_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:padding="5dp"
+                android:background="@drawable/btn_background"
+                android:layout_margin="10dp"
+                android:textColor="#FFF"
+                android:text="Share"/>
+
+            <Button
+                android:id="@+id/email_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:padding="5dp"
+                android:background="@drawable/btn_background"
+                android:layout_margin="10dp"
+                android:textColor="#FFF"
+                android:text="Email"/>
+
+            <Button
+                android:id="@+id/call_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:padding="5dp"
+                android:background="@drawable/btn_background"
+                android:layout_margin="10dp"
+                android:textColor="#FFF"
+                android:text="Call"/>
+
+            <Button
+                android:id="@+id/sms_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:padding="5dp"
+                android:background="@drawable/btn_background"
+                android:layout_margin="10dp"
+                android:textColor="#FFF"
+                android:text="SMS"/>
+
+
         </LinearLayout>
 
         <TextView

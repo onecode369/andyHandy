@@ -211,6 +211,58 @@
       ankoStartActivityOther( context , Activity Class Object , true ,
                 variable number of arguments of Pair )
       ```
+
+- Implicit Intents
+  - Browse Intent
+    - Inside Activity
+      ```
+      browse( full url as String )
+      ```
+    - Outside Activity
+      ```
+      browseOther(contex , full url as String )
+      ```
+      
+  - Share Intent
+    - Inside Activity
+      ```
+      share( text , subject , chooser title )
+      ```
+    - Outside Activity
+      ```
+      shareOther( context , text , subject , chooser title )
+      ```
+      
+  - Email Intent
+    - Inside Activity
+      ```
+      email( email Id , subject , text )
+      ```
+    - Outside Activity
+      ```
+      emailOther ( context , email Id , subject , text )
+      ```
+      
+  - Call Intent
+    - Inside Activity
+    > Make Sure to take run-time permission 
+      ```
+      makeCall ( Phone Number )
+      ```
+    - Outside Activity
+      ```
+      makeCallOther ( context , Phone Number )
+      ```
+      
+  - SMS Intent
+    - Inside Activity
+      ```
+      sendSMS( Phone Number , text )
+      ```
+    - Outside Activity
+      ```
+      sendSMSOther( context , text )
+      ```
      
      
 ## Contributing
