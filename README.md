@@ -7,6 +7,7 @@
 - **Snackbar**
 - **Alert Dialog Box**
 - **Notification**
+- **Intents**
 ---
 
 ### Toast
@@ -172,6 +173,45 @@
   notificationOther(context , uniqueId , channelId , contentTitle , 
   contentText , description , smallIcon , largeIcon)
   ```     
+     
+
+### Intents
+- Explicit Intent
+  - Inside Activity
+    - Without putExtras
+      ```
+      // Without creating new flag 
+      ankoStartActivity( Activity Class Object )
+      // With new flag
+      ankoStartActivity( Activity Class Object , true )
+      ```
+    - With putExtras
+      ```
+      // Without creating new flag 
+      ankoStartActivity( Activity Class Object , false ,
+                variable number of arguments of Pair )
+      // With new flag
+      ankoStartActivity( Activity Class Object , true ,
+                variable number of arguments of Pair )
+      ```
+  - Outside Activity
+    - Without putExtras
+      ```
+      // Without creating new flag 
+      ankoStartActivityOther( context , Activity Class Object )
+      // With new flag
+      ankoStartActivityOther( context , Activity Class Object , true )
+      ```
+    - With putExtras
+      ```
+      // Without creating new flag 
+      ankoStartActivityOther( context , Activity Class Object , false ,
+                variable number of arguments of Pair )
+      // With new flag
+      ankoStartActivityOther( context , Activity Class Object , true ,
+                variable number of arguments of Pair )
+      ```
+     
      
 ## Contributing
 
