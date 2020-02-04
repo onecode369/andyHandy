@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
                 })
         }
         notify_btn.setOnClickListener {
-            notification(124,"Anko","Anko test","Blah blah blah","Anko Notification",R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground)
+            notification(124,"Andy","Andy test","Blah blah blah","Andy Notification",R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground)
         }
         new_activity_btn.setOnClickListener {
             andyStartActivity(Animations(),true,Pair("Check1","Checked"))
@@ -40,16 +40,16 @@ class MainActivity : AppCompatActivity() {
             browse("https://www.google.com")
         }
         share_btn.setOnClickListener {
-            share("Hi Anko main","This is message from anko main","Choose to anko")
+            share("Hi Andy main","This is message from andy main","Choose to andy")
         }
         email_btn.setOnClickListener {
-            email("example@gmail.com","Anko Main Test","Anko main text emailing")
+            email("example@gmail.com","Andy Main Test","andy main text emailing")
         }
         call_btn.setOnClickListener {
             makeCall("9999999999")
         }
         sms_btn.setOnClickListener {
-            sendSMS("9999999999","From main anko")
+            sendSMS("9999999999","From main andy")
         }
     }
 }

@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.activity_animations.*
 
 class Animations : AppCompatActivity() {
 
-    private val animationsArray = arrayOf("No animation","Slide In Left","Slide In Right","Slide In Top","Slide In Bottom","Slide Out Left","Slide Out Right","Slide Out Top","Slide Out Bottom")
+    private val animationsArray = arrayOf("No animation","Slide In Left","Slide In Right","Slide In Top","Slide In Bottom","Slide Out Left","Slide Out Right","Slide Out Top","Slide Out Bottom", "Fade In","Fade Out")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,6 +32,8 @@ class Animations : AppCompatActivity() {
                     6 -> slideOutRight(imageView)
                     7 -> slideOutTop(imageView)
                     8 -> slideOutBottom(imageView)
+                    9-> fadeIn(imageView)
+                    10 -> fadeOut(imageView)
                 }
             }
 
