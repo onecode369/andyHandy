@@ -75,6 +75,7 @@ dependencies {
     ```
   
 ### Snackbar
+> Button and its function are optional
 - Short Length Snackbar 
     ```
     snackbar(view,"Hi there!") // CharSequence
@@ -134,6 +135,7 @@ dependencies {
     ```
      
 ### Alert Dialog
+> Buttons and their functions are optional
 - Dialog Box with positive button only
   - Inside Activity
       ```
