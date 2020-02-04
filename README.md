@@ -1,7 +1,6 @@
 # AndyHandy
 
-[![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)
-[![Latest AndyHandy Release](https://jitpack.io/v/onecode369/andyHandy.svg)](https://jitpack.io/#onecode369/andyHandy)
+[![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0) [![Latest AndyHandy Release](https://jitpack.io/v/onecode369/andyHandy.svg)](https://jitpack.io/#onecode369/andyHandy)
 
 ## How to add BasicAnkoLibrary to your app
 ---
@@ -23,13 +22,30 @@ dependencies {
 }
 ```
 
-## AndyHandy has :
-- **Toast**
-- **Snackbar**
-- **Alert Dialog Box**
-- **Notification**
-- **Intents**
+## AndyHandy consist of :
+- **AndyHandy Commons**
+  - **Toast**
+  - **Snackbar**
+  - **Alert Dialog Box**
+  - **Notification**
+  - **Intents**
+  
+
+- **AndyHandy Animations**
+  - **Slide Animations**
+    - **Slide In**
+      - **from Top**
+      - **from Bottom**
+      - **from Left**
+      - **from Right**
+    - **Slide Out**
+      - **from Top**
+      - **from Bottom**
+      - **from Left**
+      - **from Right**
 ---
+
+## AndyHandy Commons
 
 ### Toast
 - Short Length Toast 
@@ -266,6 +282,7 @@ dependencies {
       
   - Call Intent
     > Make Sure to take run-time permission 
+
     - Inside Activity
       ```
       makeCall ( Phone Number )
@@ -282,10 +299,49 @@ dependencies {
       ```
     - Outside Activity
       ```
-      sendSMSOther( context , text )
+      sendSMSOther( context , Phone Number , text )
       ```
      
+---     
+## AndyHandy Animations     
      
+### Slide Animations     
+> Note : Duration and repeatCount are optional by default duration is 2000 ( 2ms ) and repeatCount is 0
+- Slide In
+  - Slide In from left
+    ```
+    slideInLeft( view , duration , repeatCount )
+    ```
+  - Slide In from Right
+    ```
+    slideInRight( view , duration , repeatCount )
+    ```
+  - Slide In from Top
+    ```
+    slideInTop( view , duration , repeatCount )
+    ```
+  - Slide In from Bottom
+    ```
+    slideInBottom( view , duration , repeatCount )
+    ```
+- Slide Out
+  - Slide Out from left
+    ```
+    slideOutLeft( view , duration , repeatCount )
+    ```
+  - Slide Out from Right
+    ```
+    slideOutRight( view , duration , repeatCount )
+    ```
+  - Slide Out from Top
+    ```
+    slideOutTop( view , duration , repeatCount )
+    ```
+  - Slide Out from Bottom
+    ```
+    slideOutBottom( view , duration , repeatCount )
+    ```
+---     
 ## Contributing
 
 The best way to submit a patch is to send us a [pull request](https://help.github.com/articles/about-pull-requests/). Before submitting the pull request, make sure all existing tests are passing, and add the new test if it is required.
