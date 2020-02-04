@@ -46,6 +46,21 @@ dependencies {
   - **Fade Animations**
     - **Fade In**
     - **Fade Out**
+  - **Translate Animations**
+    - **Translate along X**
+    - **Translate along Y**
+  - **Rotate Animation**
+    - **Rotate along X**
+    - **Rotate along Y**
+    - **Rotate along Z**
+  - **Zoom Animation**
+    - **Zoom In**
+    - **Zoom Out**
+  - **Bounce Animation**
+    - **Bounce In from left**
+    - **Bounce In from right**
+    - **Bounce In from top**
+    - **Bounce In from bottom**
 ---
 
 ## AndyHandy Commons
@@ -353,10 +368,69 @@ dependencies {
   ```
   fadeIn( view , duration , repeatCount )
   ```
--  Fade out
+- Fade out
   ```
   fadeOut( view , duration , repeatCount )
   ```
+    
+### Translate Animations
+> Note : Duration , repeatCount , from and to positions are optional by default duration is 2000 ( 2ms ) , repeatCount is 0 , from is -250f and to is 0f
+- Translate along X
+  ```
+  translateX( view , duration , repeatCount , from , to )
+  ```
+- Translate along Y
+  ```
+  translateY( view , duration , repeatCount , from , to )
+  ```
+  
+### Rotate Animations
+> Note : Duration , repeatCount , from and to positions are optional by default duration is 2000 ( 2ms ) , repeatCount is 0 , from is -360f and to is 0f
+- Rotate along X
+  ```
+  rotateX( view , duration , repeatCount , from , to )
+  ```
+- Rotate along Y
+  ```
+  rotateY( view , duration , repeatCount , from , to )
+  ```  
+- Rotate along Z
+  ```
+  rotateZ( view , duration , repeatCount , from , to )
+  or
+  rotate( view , duration , repeatCount , from , to )
+  ```
+ 
+### Zoom Animations
+> Note : Duration and repeatCount are optional by default duration is 2000 ( 2ms ) and repeatCount is 0
+- Zoom in
+  ```
+  zoomIn( view , duration , repeatCount )
+  ```
+- Zoom out
+  ```
+  zoomOut( view , duration , repeatCount )
+  ```
+    
+### Bounce Animations     
+> Note : Duration and repeatCount are optional by default duration is 2000 ( 2ms ) and repeatCount is 0
+- Bounce In from left
+  ```
+  bounceInLeft( view , duration , repeatCount )
+  ```
+- Bounce In from Right
+  ```
+  bounceInRight( view , duration , repeatCount )
+  ```
+- Bounce In from Top
+  ```
+  bounceInTop( view , duration , repeatCount )
+  ```
+- Bounce In from Bottom
+  ```
+  bounceInBottom( view , duration , repeatCount )
+  ```
+    
 ---     
 ## Contributing
 
