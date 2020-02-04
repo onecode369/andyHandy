@@ -43,6 +43,9 @@ dependencies {
       - **from Bottom**
       - **from Left**
       - **from Right**
+  - **Fade Animations**
+    - **Fade In**
+    - **Fade Out**
 ---
 
 ## AndyHandy Commons
