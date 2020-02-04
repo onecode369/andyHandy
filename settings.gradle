@@ -1,2 +1,2 @@
-include ':app', ':andy-handy-commons'
+include ':app', ':andy-handy-commons', ':andy-handy-animations'
 rootProject.name='Andy Handy'

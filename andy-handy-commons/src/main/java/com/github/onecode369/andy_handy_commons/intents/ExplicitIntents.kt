@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.os.Parcelable
 import java.io.Serializable
 
-fun Context.ankoStartActivity(activity: Activity , flagNewActivity : Boolean = false,vararg params : Pair<String , Any?>){
+fun Context.andyStartActivity(activity: Activity , flagNewActivity : Boolean = false,vararg params : Pair<String , Any?>){
     val intent = Intent(this,activity::class.java)
     if(flagNewActivity){
         intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
@@ -17,7 +17,7 @@ fun Context.ankoStartActivity(activity: Activity , flagNewActivity : Boolean = f
 
 }
 
-fun ankoStartActivityOther(context: Context,activity: Activity , flagNewActivity : Boolean = false , vararg params : Pair<String , Any?>){
+fun andyStartActivityOther(context: Context,activity: Activity , flagNewActivity : Boolean = false , vararg params : Pair<String , Any?>){
     val intent = Intent(context,activity::class.java)
     if(flagNewActivity){
         intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)

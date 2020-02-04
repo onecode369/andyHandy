@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
             notification(124,"Anko","Anko test","Blah blah blah","Anko Notification",R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground)
         }
         new_activity_btn.setOnClickListener {
-            ankoStartActivity(MainActivity(),true,Pair("Check1","Checked"))
+            andyStartActivity(Animations(),true,Pair("Check1","Checked"))
         }
         browse_btn.setOnClickListener {
             browse("https://www.google.com")

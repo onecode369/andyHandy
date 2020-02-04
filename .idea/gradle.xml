@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/andy-handy-animations" />
             <option value="$PROJECT_DIR$/andy-handy-commons" />
             <option value="$PROJECT_DIR$/app" />
           </set>
