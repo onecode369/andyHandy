@@ -341,6 +341,17 @@ dependencies {
     ```
     slideOutBottom( view , duration , repeatCount )
     ```
+
+### Fade Animations
+> Note : Duration and repeatCount are optional by default duration is 2000 ( 2ms ) and repeatCount is 0
+- Fade in
+  ```
+  fadeIn( view , duration , repeatCount )
+  ```
+-  Fade out
+  ```
+  fadeOut( view , duration , repeatCount )
+  ```
 ---     
 ## Contributing
 
