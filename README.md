@@ -2,8 +2,12 @@
 
 [![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0) [![Latest AndyHandy Release](https://jitpack.io/v/onecode369/andyHandy.svg)](https://jitpack.io/#onecode369/andyHandy)
 
+### All these animations are of single line
+<img src="https://github.com/onecode369/andyHandy/blob/master/docs/animations.gif" width="30%"/>
+
 ## How to add BasicAnkoLibrary to your app
 ---
+
 ### To get this library into your app:
 
 Step 1. Add the JitPack repository to your build file
