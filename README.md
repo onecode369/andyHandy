@@ -5,7 +5,7 @@
 ### All these animations are of single line
 <img src="https://github.com/onecode369/andyHandy/blob/master/docs/animations.gif" width="30%"/>
 
-## How to add BasicAnkoLibrary to your app
+## How to add AndyHandy Library to your app
 ---
 
 ### To get this library into your app:
