@@ -25,8 +25,15 @@ dependencies {
   implementation 'com.github.onecode369:andyHandy:v0.3.0'
 }
 ```
-
-**Use latest version 0.3.0**
+If you are only interested in andyHandy Common
+```
+implementation 'com.github.onecode369.andyHandy:andy-handy-commons:v0.3.0'
+```
+ 
+If you are interested in andyHandy Animations
+```
+implementation 'com.github.onecode369.andyHandy:andy-handy-animations:v0.3.0'
+```
 
 ## AndyHandy consist of :
 - **AndyHandy Commons**
