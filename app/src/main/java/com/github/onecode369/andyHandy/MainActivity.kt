@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             toast("Hi there!")
         }
         snackbar_btn.setOnClickListener {
-            snackbar(activity_main_root,"hi","Ok",{finish()})
+            snackbar(activity_main_root,"Hi")
         }
         dialog_btn.setOnClickListener {
             dialogBox("title", "message",
@@ -31,10 +31,11 @@ class MainActivity : AppCompatActivity() {
                 })
         }
         notify_btn.setOnClickListener {
-            notification(124,"Andy","Andy test","Blah blah blah","Andy Notification",R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground)
+            notification(124,"Andy","Andy test","Blah blah blah",
+                "Andy Notification",R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground)
         }
         new_activity_btn.setOnClickListener {
-            andyStartActivity(Animations(),true,Pair("Check1","Checked"))
+            andyStartActivity(Animations())
         }
         browse_btn.setOnClickListener {
             browse("https://www.google.com")

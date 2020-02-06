@@ -17,7 +17,8 @@ class Animations : AppCompatActivity() {
         val animationsArray = arrayOf("No animation","Slide In Left","Slide In Right","Slide In Top","Slide In Bottom",
             "Slide Out Left","Slide Out Right","Slide Out Top","Slide Out Bottom", "Fade In","Fade Out","Zoom In","Zoom Out",
             "Rotate","Rotate X","Rotate Y","Rotate Z","Translate X","Translate Y",
-            "Bounce In Left","Bounce In Right","Bounce In Top","Bounce In Bottom","")
+            "Bounce In Left","Bounce In Right","Bounce In Top","Bounce In Bottom","Rotate Zoom In X","Rotate Zoom In Y","Rotate Zoom In Z",
+            "Rotate Zoom Out X","Rotate Zoom Out Y","Rotate Zoom Out Z","")
 
         animations.onItemSelectedListener
         val adapter = ArrayAdapter(this,android.R.layout.simple_spinner_item,animationsArray)
@@ -26,7 +27,7 @@ class Animations : AppCompatActivity() {
         animations.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View? , position: Int, id: Long) {
                 when(position){
-                    0 -> rotate(imageView)
+                    0 -> rotate(imageView,0f,0f)
                     1 -> slideInLeft(imageView)
                     2 -> slideInRight(imageView)
                     3 -> slideInTop(imageView)
@@ -49,6 +50,12 @@ class Animations : AppCompatActivity() {
                     20 -> bounceInRight(imageView)
                     21 -> bounceInTop(imageView)
                     22 -> bounceInBottom(imageView)
+                    23 -> rotateZoomInX(imageView)
+                    24 -> rotateZoomInY(imageView)
+                    25 -> rotateZoomInZ(imageView)
+                    26 -> rotateZoomOutX(imageView)
+                    27 -> rotateZoomOutY(imageView)
+                    28 -> rotateZoomOutZ(imageView)
                 }
             }
 

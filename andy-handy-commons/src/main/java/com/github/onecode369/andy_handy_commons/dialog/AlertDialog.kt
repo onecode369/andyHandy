@@ -1,4 +1,3 @@
-@file:Suppress("NOTHING_TO_INLINE", "unused")
 package com.github.onecode369.andy_handy_commons.dialog
 
 import android.content.Context
@@ -16,11 +15,11 @@ fun Context.dialogBox(
     val dialog = android.app.AlertDialog.Builder(this)
         .setTitle(title)
         .setMessage(message)
-        .setPositiveButton(positiveButton) { dialogInterface: DialogInterface, i: Int ->
+        .setPositiveButton(positiveButton) { _: DialogInterface, _: Int ->
             positiveButtonFun()
         }
     if (negativeButton.isNotEmpty())
-        dialog.setNegativeButton(negativeButton) { dialogInterface: DialogInterface, i: Int ->
+        dialog.setNegativeButton(negativeButton) { _: DialogInterface, _: Int ->
             negativeButtonFun()
         }
 
@@ -40,11 +39,11 @@ fun Context.dialogBox(
     val dialog = android.app.AlertDialog.Builder(this)
         .setTitle(title)
         .setMessage(message)
-        .setPositiveButton(positiveButton) { dialogInterface: DialogInterface, i: Int ->
+        .setPositiveButton(positiveButton) { _: DialogInterface, _: Int ->
             positiveButtonFun()
         }
     if (negativeButton.isNotEmpty())
-        dialog.setNegativeButton(negativeButton) { dialogInterface: DialogInterface, i: Int ->
+        dialog.setNegativeButton(negativeButton) { _: DialogInterface, _: Int ->
             negativeButtonFun()
         }
 
@@ -65,11 +64,11 @@ fun dialogBoxOther(
     val dialog = android.app.AlertDialog.Builder(context)
         .setTitle(title)
         .setMessage(message)
-        .setPositiveButton(positiveButton) { dialogInterface: DialogInterface, i: Int ->
+        .setPositiveButton(positiveButton) { _: DialogInterface, _: Int ->
             positiveButtonFun()
         }
     if (negativeButton.isNotEmpty())
-        dialog.setNegativeButton(negativeButton) { dialogInterface: DialogInterface, i: Int ->
+        dialog.setNegativeButton(negativeButton) { _: DialogInterface, _: Int ->
             negativeButtonFun()
         }
 
@@ -90,11 +89,11 @@ fun dialogBoxOther(
     val dialog = android.app.AlertDialog.Builder(context)
         .setTitle(title)
         .setMessage(message)
-        .setPositiveButton(positiveButton) { dialogInterface: DialogInterface, i: Int ->
+        .setPositiveButton(positiveButton) { _: DialogInterface, _: Int ->
             positiveButtonFun()
         }
     if (negativeButton.isNotEmpty())
-        dialog.setNegativeButton(negativeButton) { dialogInterface: DialogInterface, i: Int ->
+        dialog.setNegativeButton(negativeButton) { _: DialogInterface, _: Int ->
             negativeButtonFun()
         }
 

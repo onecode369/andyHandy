@@ -9,7 +9,7 @@ import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.os.Build
 
-fun Context.notification(uniqueId : Int ,channelId : String,contentTitle : String,contentText : String,description : String,smallIcon : Int,largeIcon : Int){
+fun Context.notification(uniqueId : Int, channelId : String, contentTitle : String, contentText : String, description : String, smallIcon : Int, largeIcon : Int){
     lateinit var notificationChannel : NotificationChannel
     lateinit var builder : Notification.Builder
 
@@ -38,7 +38,7 @@ fun Context.notification(uniqueId : Int ,channelId : String,contentTitle : Strin
     notificationManager.notify(uniqueId,builder.build())
 }
 
-fun notificationOther(context: Context , uniqueId : Int ,channelId : String,contentTitle : String,contentText : String,description : String,smallIcon : Int,largeIcon : Int){
+fun notificationOther(context: Context, uniqueId : Int, channelId : String, contentTitle : String, contentText : String, description : String, smallIcon : Int, largeIcon : Int){
     lateinit var notificationChannel : NotificationChannel
     lateinit var builder : Notification.Builder
     val notificationManager : NotificationManager =  context.getSystemService(Activity.NOTIFICATION_SERVICE) as NotificationManager
