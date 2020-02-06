@@ -65,6 +65,15 @@ dependencies {
     - **Bounce In from right**
     - **Bounce In from top**
     - **Bounce In from bottom**
+  - **Rotate and Zoom**
+    - **Rotate and Zoom In**
+      - **Rotate along X**
+      - **Rotate along Y**
+      - **Rotate along Z**
+    - **Rotate and Zoom Out**
+      - **Rotate along X**
+      - **Rotate along Y**
+      - **Rotate along Z**
 ---
 
 ## AndyHandy Commons
@@ -435,6 +444,35 @@ dependencies {
   bounceInBottom( view , duration , repeatCount )
   ```
     
+### Rotate and Zoom Animations
+> Note : Duration and repeatCount are optional by default duration is 2000 ( 2ms ) and repeatCount is 0
+- Rotate and Zoom In
+  - Rotate along X
+    ```
+    rotateZoomInX( view , duration , repeatCount)
+    ```
+  - Rotate along Y
+    ```
+    rotateZoomInY( view , duration , repeatCount)
+    ```  
+  - Rotate along Z
+    ```
+    rotateZoomInZ( view , duration , repeatCount)
+    ```
+- Rotate and Zoom Out
+  - Rotate along X
+    ```
+    rotateZoomOutX( view , duration , repeatCount)
+    ```
+  - Rotate along Y
+    ```
+    rotateZoomOutY( view , duration , repeatCount)
+    ```  
+  - Rotate along Z
+    ```
+    rotateZoomOutZ( view , duration , repeatCount)
+    ```    
+
 ---     
 ## Contributing
 
