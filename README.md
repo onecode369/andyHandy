@@ -22,9 +22,11 @@ allprojects {
 Step 2. Add the dependency
 ```
 dependencies {
-  implementation 'com.github.onecode369:andyHandy:$andyHandy_version'
+  implementation 'com.github.onecode369:andyHandy:v0.3.0'
 }
 ```
+
+**Use latest version 0.3.0**
 
 ## AndyHandy consist of :
 - **AndyHandy Commons**
